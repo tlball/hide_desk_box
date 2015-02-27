@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Hide Desk Box",
+  "version": "0.0.1",
+  "description": "Hides textarea on Desk tickets so we don't email clients",
+  "icons": {
+    "16": "images/desk16.png",
+    "48": "images/desk48.png",
+    "128": "images/desk128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+    "19": "images/desk19.png",
+    "38": "images/desk38.png"
+    },
+    "default_title": "Hide Desk Box"
+  },
+  "content_scripts" : [{
+    "matches": ["https://continuitycontrol.desk.com/*"],
+    "js" : ["mysSript.js"],
+    "run_at": "document_end"
+  }]
+}
