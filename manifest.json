@@ -17,7 +17,7 @@
   },
   "content_scripts" : [{
     "matches": ["https://continuitycontrol.desk.com/*"],
-    "js" : ["myScript.js"],
+    "js" : ["jquery.min.js","myScript.js"],
     "run_at": "document_end"
   }]
 }
