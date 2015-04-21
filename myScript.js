@@ -1,7 +1,3 @@
-$(document).ready( function () {
-  hideClientResponseBox();
-});
-
 function hideClientResponseBox() {
   try {
 // Turn off the extension if you want to write a message
