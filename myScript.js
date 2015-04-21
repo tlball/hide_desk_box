@@ -8,5 +8,10 @@ function hideClientResponseBox() {
     document.querySelector('[id^="email_reply_area_ticket_"]').style.display='none';
   } catch (e) {
     //no op
+    console.log(e);
   }
 }
+$( document ).ajaxStop(function() {
+alert('foobar');
+  console.log('I made it!');
+});
