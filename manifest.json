@@ -8,13 +8,6 @@
     "48": "images/desk48.png",
     "128": "images/desk128.png"
   },
-  "browser_action": {
-    "default_icon": {
-    "19": "images/desk19.png",
-    "38": "images/desk38.png"
-    },
-    "default_title": "Continuity Desk Tweaks"
-  },
   "content_scripts" : [{
     "matches": ["https://continuitycontrol.desk.com/*"],
     "js" : ["jquery.min.js","myScript.js"],
