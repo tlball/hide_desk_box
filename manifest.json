@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Hide Desk Box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hides textarea on Desk tickets so we don't email clients",
   "icons": {
     "16": "images/desk16.png",
