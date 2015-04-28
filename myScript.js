@@ -8,9 +8,16 @@ function disableClientResponseBox() {
   }
 }
 
+function removeAutoResolveButton() {
+  if($(".ticket_filter_item_tv_tip_resolve").length > 0 ) {
+    $(".ticket_filter_item_tv_tip_resolve").hide()
+  }
+}
+
 // This is really ugly and not optimized, but works :) - hits 100+ times
 document.addEventListener('DOMNodeInserted', function (event) {
   if($(event.target).find('[id^="email_reply_area_ticket_"]').length > 0){
     disableClientResponseBox();
   }
+  removeAutoResolveButton();
 });
